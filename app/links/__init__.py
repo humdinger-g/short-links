@@ -1,0 +1,1 @@
+"""Link-related domain logic."""
