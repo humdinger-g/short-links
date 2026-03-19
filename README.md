@@ -64,6 +64,60 @@ docker compose up --build
 - обновлять и удалять свои ссылки
 - просматривать историю истекших ссылок
 
+## Тестирование
+
+Установите зависимости для тестов:
+
+```bash
+python3 -m pip install -e '.[test]'
+```
+
+Запуск unit и functional тестов:
+
+```bash
+pytest tests
+```
+
+Текстовый результат прогона сохранен в `reports/test-results.txt`.
+
+Проверка покрытия:
+
+```bash
+coverage run -m pytest tests
+coverage report
+coverage html
+```
+
+HTML-отчет покрытия генерируется в `htmlcov/index.html`.
+Текущее покрытие по `app/` — `96%`.
+Текстовые артефакты покрытия:
+
+- `reports/coverage-test-run.txt`
+- `reports/coverage.txt`
+
+### Нагрузочное тестирование
+
+Сценарий для `Locust` находится в `tests/load/locustfile.py`.
+
+Запуск через веб-интерфейс:
+
+```bash
+locust -f tests/load/locustfile.py --host http://localhost:8000
+```
+
+Запуск в headless-режиме:
+
+```bash
+locust -f tests/load/locustfile.py --host http://localhost:8000 --headless -u 20 -r 5 -t 1m
+```
+
+Артефакты последнего нагрузочного прогона:
+
+- `tests/load/locust_run_stats.csv`
+- `tests/load/locust_run_failures.csv`
+- `tests/load/locust_run_exceptions.csv`
+- `tests/load/locust_run_stats_history.csv`
+
 ## Переменные окружения
 
 - `APP_NAME` — имя приложения

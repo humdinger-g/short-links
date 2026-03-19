@@ -1,6 +1,10 @@
 .env
 .venv/
+.venv-tests/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.coverage
+.coverage.*
+*.swp
 .DS_Store

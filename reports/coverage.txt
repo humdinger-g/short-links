@@ -1,0 +1,21 @@
+Name                       Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------
+app/api/router.py              6      0      0      0   100%
+app/api/routes/auth.py        26      0      4      0   100%
+app/api/routes/links.py       84      6     14      4    90%   52-53, 70, 90, 133, 165
+app/auth/dependencies.py      24      0      6      0   100%
+app/auth/schemas.py           21      0      4      0   100%
+app/auth/security.py          65      2      8      0    97%   101-102
+app/cache.py                  23      0      4      0   100%
+app/db/base.py                 3      0      0      0   100%
+app/db/models.py              39      0      0      0   100%
+app/db/session.py              8      0      0      0   100%
+app/lifecycle.py              36      0      4      0   100%
+app/links/cache.py            43      0     12      0   100%
+app/links/cleanup.py          29      1      6      1    94%   28
+app/links/schemas.py          40      2     14      2    93%   12, 37
+app/links/service.py          59      5     12      2    90%   83-85, 92, 109
+app/main.py                    7      0      0      0   100%
+app/settings.py               17      0      0      0   100%
+----------------------------------------------------------------------
+TOTAL                        530     16     88      9    96%

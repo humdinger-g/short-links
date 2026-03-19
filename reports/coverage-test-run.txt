@@ -1,0 +1,126 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.3, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/glebgerasimov/short_links
+configfile: pyproject.toml
+plugins: anyio-4.12.1, mock-3.15.1, locust-2.43.3, asyncio-0.26.0
+asyncio: mode=Mode.AUTO, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 66 items
+
+tests/functional/test_auth_api.py ...                                    [  4%]
+tests/functional/test_links_api.py ...........                           [ 21%]
+tests/unit/test_auth_dependencies.py ....                                [ 27%]
+tests/unit/test_auth_schemas.py .....                                    [ 34%]
+tests/unit/test_auth_security.py .........                               [ 48%]
+tests/unit/test_db_session.py .                                          [ 50%]
+tests/unit/test_lifecycle.py ...                                         [ 54%]
+tests/unit/test_links_cache.py .........                                 [ 68%]
+tests/unit/test_links_cleanup.py ....                                    [ 74%]
+tests/unit/test_links_schemas.py ........                                [ 86%]
+tests/unit/test_links_service.py .........                               [100%]
+
+=============================== warnings summary ===============================
+tests/functional/test_auth_api.py::test_register_and_login_flow
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:1216: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    return asyncio.get_event_loop_policy()
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:874: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    _restore_event_loop_policy(asyncio.get_event_loop_policy()),
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:772: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    old_loop_policy = asyncio.get_event_loop_policy()
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:777: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    asyncio.set_event_loop_policy(policy)
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:1183: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    loop = asyncio.get_event_loop_policy().new_event_loop()
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:889: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    policy = asyncio.get_event_loop_policy()
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:794: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    asyncio.set_event_loop_policy(old_loop_policy)
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:942: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    policy = asyncio.get_event_loop_policy()
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:966: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    asyncio.set_event_loop_policy(previous_policy)
+
+tests/functional/test_auth_api.py: 3 warnings
+tests/functional/test_links_api.py: 11 warnings
+tests/unit/test_auth_dependencies.py: 4 warnings
+tests/unit/test_db_session.py: 1 warning
+tests/unit/test_lifecycle.py: 3 warnings
+tests/unit/test_links_cache.py: 4 warnings
+tests/unit/test_links_cleanup.py: 4 warnings
+tests/unit/test_links_service.py: 6 warnings
+  /Users/glebgerasimov/short_links/.venv-tests/lib/python3.14/site-packages/pytest_asyncio/plugin.py:978: DeprecationWarning: 'asyncio.get_event_loop_policy' is deprecated and slated for removal in Python 3.16
+    policy = asyncio.get_event_loop_policy()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 66 passed, 325 warnings in 0.56s =======================

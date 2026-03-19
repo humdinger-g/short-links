@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     debug: bool = False
     database_url: str = "postgresql+asyncpg://postgres:postgres@db:5432/short_links"
     redis_url: str = "redis://redis:6379/0"
+    public_base_url: str = "http://localhost:8000"
     auth_secret: str = "change-me"
     access_token_ttl_minutes: int = 60
     cache_ttl_seconds: int = 300
